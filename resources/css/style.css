@@ -6,6 +6,9 @@ body{
     opacity: 0.9;
     text-align: center;
     font-weight: bold;
+    width: 100%;
+    margin: 0;
+
 }
 header{
     display: flex;
@@ -31,9 +34,10 @@ a:hover{
     margin-left: 10px;    
 }
 
-li{
+ul li{
     display: inline-block;
     text-decoration: underline;
+    margin-right: 20px;
 }
 #mission{
     display: flex;
@@ -99,7 +103,7 @@ font-weight: bold;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+   
     flex:0 2 auto;
     
 }
@@ -124,4 +128,42 @@ br{
 .responsive {
     max-width: 100%;
     height: auto;
+  }
+
+  @media only screen and (max-width:700px){
+      .logo{
+          margin: 0 auto;
+      }
+      ul li a{
+          width: 100%;
+          font-size: 15px; 
+      }
+      li{
+          text-align: center;
+          margin: 0 10px;
+      }
+      figcaption{
+          font-size: 12px;
+      }
+      #mission .mbackground {
+          width: 100%;
+      }
+      .missiontext{
+          font-size: 10px;
+      } 
+        p.oakdale, p.downtown, p.east{
+          
+          font-size: 8px;
+          height: 120px;
+          width: 80px;
+          margin: 0 20px;
+          padding: 5px;
+      }
+      footer{
+          font-size: 10px;
+      }
+      .copyright{
+          font-size: 8px ;
+      }
+      
   }
